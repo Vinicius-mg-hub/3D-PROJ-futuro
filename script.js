@@ -10,24 +10,24 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Precisava ajudar financeiramente em casa.",
-                afirmacao: "Precisava ajudar financeiramente em casa."
+                afirmacao: "Voce entrou cedo no mercado de trabalho, mas não preparado"
             },
             {
                 texto: "Queria iniciar sua jornada profissional com foco no futuro",
-                afirmacao: "Queria iniciar sua jornada profissional com foco no futuro"
+                afirmacao: "Demorou para entrar no mercado de trabalho, mas entrou com um bom salário"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "No ambiente de trabalho, você decidiu",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Cumprir suas tarefas básicas, sem se envolver muito.",
+                afirmacao: "Voce fez o básico com uma vida monótona"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Se dedicar ao máximo e aprender tudo o que pudesse",
+                afirmacao: "Voce teve grande destaque. o que chamou a atenção de seu chefe"
             }
         ]
     },
