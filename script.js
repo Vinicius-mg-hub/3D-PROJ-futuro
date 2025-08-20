@@ -9,11 +9,11 @@ const perguntas = [
         enunciado: "Você aceitou seu primeiro emprego porque",
         alternativas: [
             {
-                texto: "a",
+                texto: "Precisava ajudar financeiramente em casa.",
                 afirmacao: "Precisava ajudar financeiramente em casa."
             },
             {
-                texto: "b",
+                texto: "Queria iniciar sua jornada profissional com foco no futuro",
                 afirmacao: "Queria iniciar sua jornada profissional com foco no futuro"
             }
         ]
