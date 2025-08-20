@@ -1,18 +1,113 @@
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
+
 const perguntas = [
     {
-        enunciado: "Qual vocẽ acredita que deve ser o pruncipal objetio de um jovem no inicio de sua carreira?
+        enunciado: "Você aceitou seu primeiro emprego porque",
         alternativas: [
             {
-                texto:"a",
-                afirmação: "Priorizar experiẽncias, mesmo que o salário seja baixo"
+                texto: "a",
+                afirmacao: "Precisava ajudar financeiramente em casa."
             },
             {
                 texto: "b",
-                afirmação: "Priorizar o salário, mesmo que as vagas ofereçam pouca experiência"
+                afirmacao: "Queria iniciar sua jornada profissional com foco no futuro"
             }
         ]
     },
     {
-        enunciado: "repete o padrao superior para todas perguntas",
+        enunciado: "",
+        alternativas: [
+            {
+                texto: "",
+                afirmacao: ""
+            },
+            {
+                texto: "",
+                afirmacao: ""
+            }
+        ]
+    },
+    {
+        enunciado: "",
+        alternativas: [
+            {
+                texto: "",
+                afirmacao: ""
+            },
+            {
+                texto: "",
+                afirmacao: ""
+            }
+        ]
+    },
+    {
+        enunciado: "",
+        alternativas: [
+            {
+                texto: "",
+                afirmacao: ""
+            },
+            {
+                texto: "",
+                afirmacao: ""
+            }
+        ]
+    },
+    {
+        enunciado: "",
+        alternativas: [
+            {
+                texto: "",
+                afirmacao: ""
+            },
+            {
+                texto: "",
+                afirmacao: ""
+            }
+        ]
+    },
+];
+
+
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
+
+function mostraPergunta() {
+    if (atual >= perguntas.length) {
+        mostraResultado();
+        return;
     }
-]
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
+}
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
+}
+
+function mostraResultado() {
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
+mostraPergunta();
