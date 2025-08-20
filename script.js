@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Precisava ajudar financeiramente em casa.",
-                afirmacao: "Voce entrou cedo no mercado de trabalho, mas não preparado"
+                afirmacao: "Você entrou cedo no mercado de trabalho, mas não preparado."
             },
             {
-                texto: "Queria iniciar sua jornada profissional com foco no futuro",
-                afirmacao: "Demorou para entrar no mercado de trabalho, mas entrou com um bom salário"
+                texto: "Queria iniciar sua jornada profissional com foco no futuro.",
+                afirmacao: "Demorou para entrar no mercado de trabalho, mas entrou com um bom salário."
             }
         ]
     },
@@ -23,55 +23,67 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Cumprir suas tarefas básicas, sem se envolver muito.",
-                afirmacao: "Voce fez o básico com uma vida monótona"
+                afirmacao: "Você fez o básico, levando uma vida monótona."
             },
             {
-                texto: "Se dedicar ao máximo e aprender tudo o que pudesse",
-                afirmacao: "Voce teve grande destaque. o que chamou a atenção de seu chefe"
+                texto: "Se dedicar ao máximo e aprender tudo o que pudesse.",
+                afirmacao: "Você teve grande destaque, o que chamou a atenção de seu chefe."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Diante de erros ou críticas, você:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Preferiu se afastar e evitar problemas.",
+                afirmacao: "Você não soube lidar bem com críticas, o que atrasou seu desenvolvimento."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Encarou como parte do processo de crescimento.",
+                afirmacao: "Você amadureceu e se fortaleceu com as críticas, crescendo pessoal e profissionalmente."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Após começar a trabalhar, você:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Deixou os estudos em segundo plano.",
+                afirmacao: "Com o tempo, sentiu falta de qualificação e percebeu as limitações dessa escolha."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Buscou equilibrar o trabalho com a continuidade dos estudos.",
+                afirmacao: "Conseguiu conciliar rotina intensa, garantindo melhores oportunidades no futuro."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Quando surgiu uma nova oportunidade em outra empresa, você:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Recusou, com medo de sair da zona de conforto.",
+                afirmacao: "Você se manteve na estabilidade, mas deixou de explorar novas possibilidades."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Aceitou o desafio e buscou crescimento profissional.",
+                afirmacao: "Você expandiu seus horizontes e conquistou novas experiências."
             }
         ]
     },
+    {
+        enunciado: "Pensando no futuro, você deseja:",
+        alternativas: [
+            {
+                texto: "Permanecer onde está, buscando estabilidade.",
+                afirmacao: "Sua prioridade foi a segurança, mantendo uma vida previsível e tranquila."
+            },
+            {
+                texto: "Evoluir constantemente e alcançar cargos mais altos.",
+                afirmacao: "Sua ambição abriu portas, levando você a alcançar grandes conquistas."
+            }
+        ]
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
